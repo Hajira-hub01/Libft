@@ -32,6 +32,6 @@ int	ft_atoi(const char *str)
 
 int main (void)
 {
-    printf("%d\n", ft_atoi("9223372036854775807"));
-    printf("%d\n", atoi("9223372036854775807"));
+    printf("%d\n", ft_atoi("-999999955747383939"));
+    printf("%d\n", atoi("-999999955747383939"));
 }
