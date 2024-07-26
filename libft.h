@@ -3,7 +3,8 @@
 # include <stdio.h>
 # include <unistd.h>
 # include <limits.h>
-#include <stdlib.h>
+# include <stdlib.h>
+# include <string.h>
 
 int	ft_isalpha(int c);
 int ft_isalnum(int c);

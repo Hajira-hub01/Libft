@@ -1,3 +1,5 @@
+#include "libft.h"
+
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
@@ -23,5 +25,5 @@ int	main(void)
 
 	n = 3;
 	printf("%i\n", ft_strncmp(str1, str2, n));
-	printf("%i", strncmp(str1, str2, n));
+	printf("%i\n", strncmp(str1, str2, n)); 
 }
