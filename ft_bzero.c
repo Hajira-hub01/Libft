@@ -13,11 +13,3 @@ void ft_bzero(void *s, size_t n)
         i++;
     }
 }
-
-int main ()
-{
-    char str[] = "hi";
-    printf ("%s\n", str);
-    ft_bzero (str, 2);
-    printf ("%s\n", str);
-}

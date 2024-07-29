@@ -25,5 +25,4 @@ int	main(void)
 
 	n = 3;
 	printf("%i\n", ft_strncmp(str1, str2, n));
-	printf("%i\n", strncmp(str1, str2, n)); 
 }
