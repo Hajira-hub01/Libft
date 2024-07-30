@@ -10,7 +10,7 @@ char *ft_strchr(const char *s, int c)
         if (s[i] == (char)c)
             return (char *)s + i;
         i++;
-    }
+    })
     if ((char)c == '\0')
         return (char *)s + i;
     return(NULL);
@@ -19,6 +19,6 @@ char *ft_strchr(const char *s, int c)
 int main(void)
 {
     char *str = "hello";
-    char c = '\0';
+    char c = 'l';
     printf("%s", ft_strchr(str, c));
 }
