@@ -2,39 +2,25 @@
 
 char *ft_strtrim(char const *s1, char const *set)
 {
-    char *s2;
-    char *s3;
-    unsigned int i;
-    unsigned int j;
-    unsigned int k;
+    size_t start;
+    size_t end;
+    char *strim;
 
-    i = 0;
-    while (s1)
-    {
-        j = 0;
-        if (s1[i] != set[j])
-            break;
-        if (s1[i] == set[j])
-        {
-            s3[k] = s1[i];
-            i++;
-            j++;
-        }
-        
-    }
-
-    while (s1)
-    {
-        j = ft_strlen(s1);
-        if (s1[i] != set[j])
-            break;
-        if (s1[i] == set[j])
-        {
-            s3[k] = s1[i];
-            j--;
-            i--;
-        } 
-    }
-    s2 = malloc(ft_strlen(s3)+1);
-    return s2;
+    if (!s1 || !set)
+        return (NULL);
+    start = 0;
+    end = ft_strlen(s1);
+    while (s1[start] && ft_strchr(set, s1[start]))
+        start++;
+    while (end > start && ft_strchr(set, s1[end - 1]))
+        end--;
+    strim = malloc(end - start + 1);
+    if (strim == (NULL))
+        return (NULL);
+    ft_strlcpy(strim, &s1[start], end - start + 1);
+    return (strim);
 }
+ int main ()
+ {
+    printf ("%s\n", ft_strtrim("banana", "abc"));
+ }
