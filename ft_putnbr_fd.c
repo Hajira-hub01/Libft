@@ -2,10 +2,8 @@
 
 void ft_putnbr_fd(int n, int fd)
 {
-    if (n == -2147483648)
-	{
+    if (n == INT_MIN)
 		write(fd, "-2147483648", 11);
-	}
 	else if (n < 0)
 	{
 		ft_putchar_fd('-', fd);
