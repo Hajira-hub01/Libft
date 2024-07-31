@@ -22,7 +22,7 @@ char *ft_itoa(int n)
     unsigned int nb;
     char *str;
 
-    if (n == INT_MIN)
+    if (n == -2147483648)
         return (ft_strdup("-2147483648"));
     len = int_len(n);
     str = malloc(len + 1);
@@ -48,5 +48,5 @@ char *ft_itoa(int n)
 
 int main()
 {
-    printf("%s\n", ft_itoa(-12345));
+    printf("%s\n", ft_itoa(2147483647));
 }
