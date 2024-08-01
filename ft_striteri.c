@@ -26,8 +26,3 @@ int main ()
     ft_striteri(str,&my_toupper);
     printf("%s\n", str);
 }
-
-
-str = "hellozhowzarezyou". c = 'z'
-
-{"helo", "how", "are", "you"}
