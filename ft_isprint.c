@@ -5,18 +5,17 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hajmoham <hajmoham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/23 15:55:25 by hajmoham          #+#    #+#             */
-/*   Updated: 2024/07/23 15:55:25 by hajmoham         ###   ########.fr       */
+/*   Created: 2024/08/03 15:52:50 by hajmoham          #+#    #+#             */
+/*   Updated: 2024/08/03 15:52:50 by hajmoham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-# include "libft.h"
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);
-    else 
-        return (0);
+	else
+		return (0);
 }

@@ -5,14 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hajmoham <hajmoham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/23 15:56:51 by hajmoham          #+#    #+#             */
-/*   Updated: 2024/07/23 15:56:51 by hajmoham         ###   ########.fr       */
+/*   Created: 2024/08/03 15:54:10 by hajmoham          #+#    #+#             */
+/*   Updated: 2024/08/03 15:54:10 by hajmoham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
-
 
 int	ft_isascii(int c)
 {

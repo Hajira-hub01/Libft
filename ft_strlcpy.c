@@ -5,15 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hajmoham <hajmoham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/23 16:00:16 by hajmoham          #+#    #+#             */
-/*   Updated: 2024/07/23 16:00:16 by hajmoham         ###   ########.fr       */
+/*   Created: 2024/08/03 16:38:46 by hajmoham          #+#    #+#             */
+/*   Updated: 2024/08/03 16:38:46 by hajmoham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
-size_t ft_strlcpy(char *dest, const char *src, size_t size)
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 

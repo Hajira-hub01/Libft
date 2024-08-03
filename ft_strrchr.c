@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hajmoham <hajmoham@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/03 16:43:41 by hajmoham          #+#    #+#             */
+/*   Updated: 2024/08/03 16:43:44 by hajmoham         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	int	len;
 
@@ -11,14 +23,14 @@ char *ft_strrchr(const char *s, int c)
 			return ((char *)s + len);
 		len--;
 	}
-    if (c == '\0')
+	if (c == '\0')
 		return ((char *)s + len);
 	return (NULL);
 }
 
-int main(void)
-{
-    char *str = "hello this is lucy";
-    char c = 's';
-    printf("%s", ft_strrchr(str, c));
-}
+// int main(void)
+// {
+//     char *str = "hello this is lucy";
+//     char c = 's';
+//     printf("%s", ft_strrchr(str, c));
+// }

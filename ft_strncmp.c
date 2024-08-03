@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hajmoham <hajmoham@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/03 16:42:51 by hajmoham          #+#    #+#             */
+/*   Updated: 2024/08/03 16:43:20 by hajmoham         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
@@ -8,7 +20,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	while (s1[i] && s2[i] && (n > 0))
 	{
 		if (s1[i] != s2[i])
-			break;
+			break ;
 		i++;
 		n--;
 	}
@@ -17,12 +29,12 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 
-int	main(void)
-{
-	char			str1[] = "cars";
-	char			str2[] = "cats";
-	size_t	n;
+// int	main(void)
+// {
+// 	char			str1[] = "cars";
+// 	char			str2[] = "cats";
+// 	size_t	n;
 
-	n = 3;
-	printf("%i\n", ft_strncmp(str1, str2, n));
-}
+// 	n = 3;
+// 	printf("%i\n", ft_strncmp(str1, str2, n));
+// }
