@@ -58,5 +58,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 size_t	ft_strlen(const char *str);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
+t_list	*ft_lstnew(void *content);
 
 #endif
