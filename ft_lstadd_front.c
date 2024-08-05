@@ -10,13 +10,14 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	*lst = new;
 }
 
-int main(void)
-{
-	t_list *lst = ft_lstnew("hello");
-	printf("%s\n", (char *)lst->content);
-	ft_lstadd_front(&lst, ft_lstnew("hii"));
+// int main(void)
+// {
+// 	t_list *lst;
+// 	lst = ft_lstnew("hello");
+// 	printf("before new added: %s\n", (char *)lst->content);
+// 	ft_lstadd_front(&lst, ft_lstnew("hii"));
 
-	printf("%s\n", (char *)lst->content);
-	lst = lst->next;
-	printf("%s", (char *)lst->content);
-}
+// 	printf("after new added: %s\n", (char *)lst->content);
+// 	lst = lst->next;
+// 	printf("%s", (char *)lst->content);
+// }

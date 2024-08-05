@@ -1,18 +1,13 @@
 #include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+t_list *ft_lstlast(t_list *lst)
 {
-	int	i;
-
-	i = 0;
-	while (lst != NULL)
-	{
-		lst = lst->next;
-		i++;
-	}
-	return (i);
+    if (!lst)
+        return NULL;
+    while (lst->next != NULL)
+        lst = lst->next;
+    return (lst);
 }
-
 // int main()
 // {
 //     t_list *lst = ft_lstnew("hello");
@@ -23,6 +18,6 @@ int	ft_lstsize(t_list *lst)
 //     ft_lstadd_front(&lst, ft_lstnew("dsad"));
 //     ft_lstadd_front(&lst, ft_lstnew("dsad"));
 
-//     int result = ft_lstsize(lst);
-//     printf("%d\n", result);
+//     t_list *results = ft_lstlast(lst);
+//     printf("%s\n", (char *)results->content);
 // }
