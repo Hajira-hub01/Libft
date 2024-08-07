@@ -18,19 +18,19 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	}
 }
 
-int main ()
-{
-	t_list *lst = ft_lstnew(ft_strdup("hello"));
-	ft_lstadd_front(&lst, ft_lstnew(ft_strdup("world")));
-	ft_lstadd_front(&lst, ft_lstnew(ft_strdup("how")));
-	ft_lstadd_front(&lst, ft_lstnew(ft_strdup("are")));
-	ft_lstadd_front(&lst, ft_lstnew(ft_strdup("you")));
+// int main ()
+// {
+// 	t_list *lst = ft_lstnew(ft_strdup("hello"));
+// 	ft_lstadd_front(&lst, ft_lstnew(ft_strdup("world")));
+// 	ft_lstadd_front(&lst, ft_lstnew(ft_strdup("how")));
+// 	ft_lstadd_front(&lst, ft_lstnew(ft_strdup("are")));
+// 	ft_lstadd_front(&lst, ft_lstnew(ft_strdup("you")));
 
-	ft_lstiter(lst, my_toupper);
-	printf("%s\n", lst->content);
-	while (lst->next != NULL)
-	{
-		lst = lst->next;
-		printf("%s\n", lst->content);
-	}
-}
+// 	ft_lstiter(lst, my_toupper);
+
+// 	while (lst != NULL)
+// 	{
+// 		printf("%s\n", lst->content);
+// 		lst = lst->next;
+// 	}
+// }

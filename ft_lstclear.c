@@ -18,3 +18,21 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
         *lst = temp;
     }
 }
+
+// int main ()
+// {
+//     t_list *lst = ft_lstnew(ft_strdup("hello"));
+//     ft_lstadd_front(&lst, ft_lstnew(ft_strdup("world")));
+// 	ft_lstadd_front(&lst, ft_lstnew(ft_strdup("how")));
+
+//     ft_lstclear(&lst, del);
+//     // if (lst == NULL)
+//     // {
+//     //     printf("Done clearing\n");
+//     // } 
+//     while (lst != NULL)
+//     {
+//         printf("%s\n", lst->content);
+//         lst = lst->next;
+//     }    
+// }

@@ -35,8 +35,18 @@ ft_substr.c \
 ft_tolower.c \
 ft_toupper.c \
 
-
 OBJ = $(SRC:.c=.o)
+
+SRC_BONUS = ft_lstnew.c \
+			ft_lstsize.c \
+			ft_lstadd_back.c \
+			ft_lstadd_front.c \
+			ft_lstclear.c \
+			ft_lstdelone.c \
+			ft_lstlast.c \
+			ft_lstiter.c \
+
+OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
 CC = cc
 
@@ -51,15 +61,18 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(AR) $@ $(OBJ)
 
+bonus: $(OBJ) $(OBJ_BONUS)
+	$(AR) $(NAME) $(OBJ) $(OBJ_BONUS)
+
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	$(DEL) $(OBJ)
+	$(DEL) $(OBJ) $(OBJ_BONUS)
 
 fclean: clean
 	$(DEL) $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
