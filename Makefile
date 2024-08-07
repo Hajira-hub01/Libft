@@ -45,6 +45,7 @@ SRC_BONUS = ft_lstnew.c \
 			ft_lstdelone.c \
 			ft_lstlast.c \
 			ft_lstiter.c \
+			ft_lstmap.c\
 
 OBJ_BONUS = $(SRC_BONUS:.c=.o)
 

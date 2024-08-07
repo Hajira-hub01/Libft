@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hajmoham <hajmoham@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/07 15:00:01 by hajmoham          #+#    #+#             */
+/*   Updated: 2024/08/07 15:05:28 by hajmoham         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void del(void* dlt)
+void	del(void *dlt)
 {
-    free(dlt);
+	free(dlt);
 }
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
@@ -14,9 +26,9 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	while (*lst != NULL)
 	{
 		temp = (*lst)->next;
-        ft_lstdelone(*lst, del);
-        *lst = temp;
-    }
+		ft_lstdelone(*lst, del);
+		*lst = temp;
+	}
 }
 
 // int main ()
@@ -29,10 +41,10 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 //     // if (lst == NULL)
 //     // {
 //     //     printf("Done clearing\n");
-//     // } 
+//     // }
 //     while (lst != NULL)
 //     {
 //         printf("%s\n", lst->content);
 //         lst = lst->next;
-//     }    
+//     }
 // }
