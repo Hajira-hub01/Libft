@@ -6,7 +6,7 @@
 /*   By: hajmoham <hajmoham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/03 16:34:45 by hajmoham          #+#    #+#             */
-/*   Updated: 2024/08/03 16:34:49 by hajmoham         ###   ########.fr       */
+/*   Updated: 2024/08/10 16:42:08 by hajmoham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,9 @@ char	*ft_strdup(const char *s)
 	str[i] = '\0';
 	return (str);
 }
+
+// int main(void)
+// {
+//     const char *str = "Hello, world!";
+//     printf("Duplicated string: %s\n", ft_strdup(str));
+// }

@@ -34,3 +34,11 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 		i++;
 	return (i);
 }
+
+// int main(void)
+// {
+//     char src[] = "Hello, world!";
+//     char dest[20];
+
+//     printf("%zu\n", ft_strlcpy(dest, src, 7));
+// }

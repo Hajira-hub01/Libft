@@ -6,7 +6,7 @@
 /*   By: hajmoham <hajmoham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/03 15:55:37 by hajmoham          #+#    #+#             */
-/*   Updated: 2024/08/03 15:58:45 by hajmoham         ###   ########.fr       */
+/*   Updated: 2024/08/10 15:59:06 by hajmoham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,5 @@ int	ft_atoi(const char *str)
 
 // int main (void)
 // {
-//     printf("%d\n", ft_atoi("-999999955747383939"));
-//     printf("%d\n", atoi("-999999955747383939"));
+//     printf("%d\n", ft_atoi("-43"));
 // }

@@ -6,7 +6,7 @@
 /*   By: hajmoham <hajmoham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/03 16:35:25 by hajmoham          #+#    #+#             */
-/*   Updated: 2024/08/03 16:52:03 by hajmoham         ###   ########.fr       */
+/*   Updated: 2024/08/10 16:47:50 by hajmoham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (s3);
 }
 
-// #include <stdio.h>
 // int main(void)
 // {
 //     printf("%s", ft_strjoin("hello ", "world"));

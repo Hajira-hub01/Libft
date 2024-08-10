@@ -6,7 +6,7 @@
 /*   By: hajmoham <hajmoham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/03 16:00:52 by hajmoham          #+#    #+#             */
-/*   Updated: 2024/08/03 16:00:55 by hajmoham         ###   ########.fr       */
+/*   Updated: 2024/08/10 16:26:06 by hajmoham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,9 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
+
+// int main()
+// {
+// 	char str[100] = "hello world this is hajira";
+// 	printf("%s", ft_memcpy(str + 5, str ,6));
+// }

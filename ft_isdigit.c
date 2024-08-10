@@ -19,3 +19,7 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
+// int main(void)
+// {
+//     printf("ft_isalnum('a') = %d\n", ft_isalnum('a'));
+// }

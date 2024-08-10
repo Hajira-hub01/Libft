@@ -6,7 +6,7 @@
 /*   By: hajmoham <hajmoham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/03 16:14:36 by hajmoham          #+#    #+#             */
-/*   Updated: 2024/08/03 16:14:38 by hajmoham         ###   ########.fr       */
+/*   Updated: 2024/08/10 16:38:41 by hajmoham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,10 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
+
+// #include<fcntl.h>
+// int main ()
+// {
+//     int fd = open("test.txt", O_WRONLY);
+//     ft_putnbr_fd(-45, fd);
+// }

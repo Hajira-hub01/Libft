@@ -6,7 +6,7 @@
 /*   By: hajmoham <hajmoham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/07 14:59:42 by hajmoham          #+#    #+#             */
-/*   Updated: 2024/08/07 14:59:45 by hajmoham         ###   ########.fr       */
+/*   Updated: 2024/08/10 16:23:15 by hajmoham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 // 	printf("before new added: %s\n", (char *)lst->content);
 // 	ft_lstadd_back(&lst, ft_lstnew("hii"));
 // 	ft_lstadd_back(&lst, ft_lstnew("hii"));
-// 	ft_lstadd_back(&lst, ft_lstnew("hii"));
-// 	ft_lstadd_back(&lst, ft_lstnew("hiijhgjghj"));
 
 //     lst = ft_lstlast(lst);
 // 	printf("after new added: %s\n", (char *)lst->content);

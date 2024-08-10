@@ -6,20 +6,20 @@
 /*   By: hajmoham <hajmoham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/07 15:00:29 by hajmoham          #+#    #+#             */
-/*   Updated: 2024/08/07 15:07:44 by hajmoham         ###   ########.fr       */
+/*   Updated: 2024/08/10 12:38:23 by hajmoham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// void	my_toupper(void *cd)
-// {
-// 	char	*c;
+void	my_toupper(void *cd)
+{
+	char	*c;
 
-// 	c = cd;
-// 	if (c[0] >= 'a' && c[0] <= 'z')
-// 		c[0] = c[0] - 32;
-// }
+	c = cd;
+	if (c[0] >= 'a' && c[0] <= 'z')
+		c[0] = c[0] - 32;
+}
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
